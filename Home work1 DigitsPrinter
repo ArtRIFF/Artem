@@ -2,7 +2,7 @@
 public class DigitsPrinter {
 	public static void main(String[] args) {
 	 int n = 13569;
-	 int a=n/10000;
+	 int a=n/10000%10;
 	 int b=n/1000%10;
 	 int c=n/100%10;
 	 int d=n/10%10;
