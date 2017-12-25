@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class DifferentRadixSummator {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите число X  в 2-ой системе счисления.");
+		String b = sc.nextLine();
+		System.out.println("Введите число Y в 8-ой системе счисления.");
+		String o = sc.nextLine();
+		System.out.println("Введите число Z в 16-ой системе счисления.");
+		String h = sc.nextLine();
+		Integer bin = Integer.parseInt(b, 2);
+		Integer oct = Integer.parseInt(o, 8);
+		Integer hex = Integer.parseInt(h, 16);
+
+		System.out.print("X + Y + Z =");
+		System.out.print(bin + oct + hex);
+
+	}
+}
