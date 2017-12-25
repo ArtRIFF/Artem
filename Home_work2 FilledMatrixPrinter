@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class FilledMatrixPrinter {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите параметры матрицы: \n Число строк");
+		int rows = sc.nextInt();
+		System.out.println("Число столбцов");
+		int cols = sc.nextInt();
+		System.out.println("Число для заполнения матрицы");
+		int filler = sc.nextInt();
+		if (rows > 0 && cols > 0) {
+			System.out.println("Результат:");
+			for (int i = 1; i <= rows; i++) {
+				System.out.print("" + "\n");
+				for (int o = 1; o <= cols; o++) {
+					System.out.print(filler + " ");
+				}
+			}
+		} else {
+			throw new IllegalArgumentException("IllegalArgumentException");
+		}
+
+	}
+}
