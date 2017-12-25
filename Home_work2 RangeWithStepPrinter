@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class RangeWithStepPrinter {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите требуемый диапазон для вывода целых чисел. \n от");
+		int first = sc.nextInt();
+		System.out.println("до");
+		int last = sc.nextInt();
+		System.out.println("с шагом");
+		int step = sc.nextInt();
+		if (step > first && step < last) {
+			System.out.println("Результат:");
+			for (int i = first; i <= last; i += step) {
+				System.out.print(i + " ");
+			}
+		}
+		else{
+			throw new IllegalArgumentException("IllegalArgumentException");
+		}
+	}
+}
