@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class EvensRangePrinter {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введите требуемый диапазон для вывода чётных чисел. \n от");
+		int first = sc.nextInt();
+		System.out.println("до");
+		int last = sc.nextInt();
+		if (first > last) {
+			System.out.println("  ");
+		}
+
+		else {
+			first += first % 2;
+			System.out.println("Результат:");
+			for (int i = first; i <= last; i = i + 2) {
+				System.out.print(i + " ");
+			}
+		}
+	}
+}
