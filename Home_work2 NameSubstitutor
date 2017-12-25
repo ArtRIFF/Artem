@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class NameSubstitutor {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter message:");
+		String message = sc.nextLine();
+		System.out.println("Enter name:");
+		String put_name = sc.nextLine();
+		String a = message.replaceFirst("this_name", put_name);
+		System.out.println(a);
+
+	}
+}
