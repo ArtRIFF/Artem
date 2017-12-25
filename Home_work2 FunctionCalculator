@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class FunctionCalculator {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter x:");
+	double x=sc.nextDouble();
+	double f=Math.log(Math.sin(x)+Math.pow(Math.E, x)*Math.sqrt(x)/Math.PI);
+	System.out.println("f(x)="+f);
+}
+}
