@@ -1,0 +1,28 @@
+public class ArrayPositiveFinder {
+	
+	public static void main(String[] args) {
+		int[] b = { 3, -3, 2, -3, -1 };
+		System.out.println(findFirstPositiveElemIndex(b));
+		System.out.println(findLastPositiveElemIndex(b));
+
+	}
+	public static int findFirstPositiveElemIndex(int[] a) {
+		int positiveFirst = -1;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > 0) {
+				positiveFirst = i;
+				break;
+			}
+		}
+		return positiveFirst;
+	}
+	public static int findLastPositiveElemIndex(int[] a) {
+		int positiveLast = -1;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] > 0) {
+				positiveLast = i;
+			}
+		}
+		return positiveLast;
+	}
+}
