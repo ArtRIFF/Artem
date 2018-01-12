@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class SequenceArrayCreator {
+	public static void main(String[] args) {
+		System.out.println(Arrays.toString(createSequenceArray(6)));
+	}
+
+	public static int[] createSequenceArray(int size) {
+		if (size < 0) {
+			throw new IllegalAccessError("Введено отрицательное значение для размера массива");
+		} else {
+			int[] a = new int[size];
+			for (int i = 0; i < a.length; i++) {
+				a[i] = i;
+			}
+			return a;
+		}
+	}
+}
