@@ -1,0 +1,26 @@
+
+public class MatrixMaxSumRowFinder {
+	public static void main(String[] args) {
+		int[][] a = { { 0, 4, 6 }, { 3, 5, 7 }, { 44, 6, 8 } };
+		int[][] b = new int[0][0];
+		System.out.println(maxSumRowIndex(a));
+		
+	}
+
+	public static int maxSumRowIndex(int[][] matrix) {
+		if(matrix.length==0)throw new IllegalArgumentException("Пустая матрица");
+		else{
+			int max = matrix[0][0];
+			int imax = 0;
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				if (max < matrix[i][j]) {
+					max = matrix[i][j];
+					imax = i;
+				}
+			}
+		}
+		return imax;
+	}
+	}
+}
