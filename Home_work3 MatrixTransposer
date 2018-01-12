@@ -1,0 +1,14 @@
+public class MatrixTransposer {
+public static void main(String[] args) {
+	int[][] a = { { 0, 4, 2 },{ 1, 0, 4 }, {3,5,7}};
+	transpose(a);
+}
+public static  void transpose(int[][]matrix) {
+	for (int i = 0; i < matrix.length; i++) {
+		for (int j = 0; j < matrix[i].length; j++) {
+			System.out.print(matrix[j][i] + " ");
+		}
+		System.out.println();
+	}
+}
+}
