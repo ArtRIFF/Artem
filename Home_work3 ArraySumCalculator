@@ -1,0 +1,15 @@
+public class ArraySumCalculator {
+	public static void main(String[] args) {
+		int[] b = { 4, 3, 2, 3, 1 };
+
+		System.out.println(sum(b));
+	}
+
+	public static int sum(int[] a) {
+		int c = 0;
+		for (int i = 0; i < a.length; i++) {
+			c = a[i] + c;
+		}
+		return c;
+	}
+}
