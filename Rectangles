@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class Rectangles {
+	private ArrayList<Integer> list = new ArrayList<>();
+	private int count = 0;
+
+	public int add(Rectangle a) {
+		list.add(count, a.getArea());
+		return this.count++;
+	}
+
+	public int getAreas() {
+		int areas = 0;
+		for (int i = 0; i < list.size(); i++) {
+			areas += list.get(i);
+		}
+		return areas;
+	}
+
+}
