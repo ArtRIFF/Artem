@@ -1,0 +1,19 @@
+public class RectangleRunner {
+	public static void main(String[] args) {
+		Rectangle a = new Rectangle(3, 10);
+		Rectangle b = new Rectangle(4, 16);
+		Rectangle c = new Rectangle(5, 8);
+		Rectangle d = new Rectangle(54, 12);
+
+		System.out.println("Периметр прямокутника " + a.getPerimeter());
+		System.out.println("Площа прямокутника " + a.getArea());
+
+		Rectangles abcd = new Rectangles();
+		abcd.add(a);
+		abcd.add(b);
+		abcd.add(c);
+		abcd.add(b);
+
+		System.out.println("Сума площ прямокутників " + abcd.getAreas());
+	}
+}
